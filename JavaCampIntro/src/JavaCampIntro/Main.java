@@ -3,7 +3,10 @@ package JavaCampIntro;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
+
+		//camelCase
+		//Don't repeat yourself
         String internetSubeButonu="Ýnternet Þubeye gir";
         double dolarDun=8.15;
         double dolarBugun=9.14;
@@ -25,6 +28,18 @@ public class Main {
              
         }
         
+    
+        String [] krediler= {"Hýzlý Kredi","Mutlu emekli Kredi","Konut Kredi","Çiftçi Kredi","Msb Kredi"};
+	
+	for(String kredi:krediler) {
+		
+		System.out.println(kredi);
+	}
+	
+	for(int i=0;i<krediler.length;i++) {
+		System.out.println(krediler[i]);
+	
+	}
 	}
 
 }
