@@ -14,13 +14,13 @@ public class Main {
 		};
 		
 		
-		Teacher teacher1=new Teacher(1,"Engin ","DEMÝROÐ");
-		Teacher teacher2=new Teacher(2,"Mehmet Emin ","KURTBOÐA");
+		Instructor instructor1=new Instructor(1,"Engin ","DEMÝROÐ");
+		Instructor instructor2=new Instructor(2,"Mehmet Emin ","KURTBOÐA");
 		
-		Teacher[] teachers= {teacher1,teacher2};
-		System.out.println(teachers.length);
-		for(Teacher teacher:teachers) {
-			System.out.println(teacher.name+ teacher.surname);
+		Instructor[] instructors= {instructor1,instructor2};
+		System.out.println(instructors.length);
+		for(Instructor instructor:instructors) {
+			System.out.println(instructor.name+ instructor.surname);
 		};
 		
 		CourseManager courseManager=new CourseManager();
