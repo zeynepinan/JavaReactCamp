@@ -7,6 +7,6 @@ public class ProductManager {
 	//2-Ýþ yapan (metot tutan) classlar
 	
 	public void addToCart(Product product) {
-		System.out.println( product.name+ " Sepete eklendi. ");
+		System.out.println( product.getName()+ " Sepete eklendi. ");
 	}
 }
