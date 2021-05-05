@@ -15,7 +15,7 @@ public class Main {
 		gamerManager.delete(gamer);
 		gamerManager.update(gamer);
 		
-		Campaign campaign1=new Campaign(1,"Büyük Ocak Ýndirimi",0.4,15000);
+		Campaign campaign1=new Campaign(1,"Büyük Ocak Ýndirimi",15000,33.2);
 		System.out.println(campaign1.getCampaingName() +"  "+campaign1.getUnitPriceAfterDiscount());
 		
 		CampaignManager campaignManager=new CampaignManager();

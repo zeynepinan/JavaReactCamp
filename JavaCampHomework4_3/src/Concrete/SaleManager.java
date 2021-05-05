@@ -14,7 +14,7 @@ public class SaleManager implements SaleService{
 
 	@Override
 	public void campaignSale(Gamer gamer, Game game, Campaign campaign) {
-		System.out.println(gamer.getFirstName()+" adlý oyuncu "+ game.getGameName()+" adlý oyunu "+campaign.getCampaingName()+" kampanyasýyla satýn aldý.");
+		System.out.println(gamer.getFirstName()+" adlý oyuncu "+ game.getGameName()+" adlý oyunu "+campaign.getCampaingName()+" kampanyasý kapsamýnda %"+campaign.getCampaignRate()+" indirimle "+ campaign.getUnitPriceAfterDiscount()+" fiyata satýn aldý.");
 		
 	}
 

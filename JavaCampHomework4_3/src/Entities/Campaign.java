@@ -5,11 +5,11 @@ public class Campaign {
 	private int id;
 	private String campaingName;
 	private double unitPrice;
-	private int campaignRate;
+	private double campaignRate;
 	
 	
 
-	public Campaign(int id, String campaingName, double unitPrice, int campaignRate) {
+	public Campaign(int id, String campaingName, double unitPrice, double campaignRate) {
 		super();
 		this.id = id;
 		this.campaingName = campaingName;
@@ -41,11 +41,11 @@ public class Campaign {
 		this.unitPrice = unitPrice;
 	}
 
-	public int getCampaignRate() {
+	public double getCampaignRate() {
 		return campaignRate;
 	}
 
-	public void setCampaignRate(int campaignRate) {
+	public void setCampaignRate(double campaignRate) {
 		this.campaignRate = campaignRate;
 	}
 	public double getUnitPriceAfterDiscount() {
