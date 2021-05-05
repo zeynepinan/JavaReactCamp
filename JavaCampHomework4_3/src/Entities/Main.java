@@ -25,11 +25,15 @@ public class Main {
 
 		
 		Game game1=new Game(1,"PubG",15);
+		Game game2=new Game(1,"CSGO",150);
 		
 		GameManager gameManager=new GameManager();
 		gameManager.add(game1);
 		gameManager.delete(game1);
 		gameManager.update(game1);
+		gameManager.add(game2);
+		gameManager.delete(game2);
+		gameManager.update(game2);
 		
 		SaleManager saleManager=new SaleManager();
 		saleManager.sale(gamer, game1);
