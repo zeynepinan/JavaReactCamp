@@ -3,6 +3,7 @@ package Entities;
 import Concrete.CampaignManager;
 import Concrete.GameManager;
 import Concrete.GamerManager;
+import Concrete.SaleManager;
 
 public class Main {
 
@@ -29,6 +30,10 @@ public class Main {
 		gameManager.add(game1);
 		gameManager.delete(game1);
 		gameManager.update(game1);
+		
+		SaleManager saleManager=new SaleManager();
+		saleManager.sale(gamer, game1);
+		saleManager.campaignSale(gamer, game1, campaign1);
 		
 	}
 
