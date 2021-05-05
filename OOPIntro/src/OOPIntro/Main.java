@@ -29,6 +29,7 @@ public class Main {
 		
 		System.out.println(category1.getName());
 		System.out.println(category2.getName());
+		System.out.println(category2.getName());
 		
 	}
 
