@@ -12,7 +12,10 @@ public class Main {
 	    
 		BaseCustomerManager customerManager=new StarbucksCustomerManager(new MernisServiceAdapter());  
 	    
+		Customer customer1=new Customer(1,"Zeynep","İnan",1998,"100000000");
+	    
 		customerManager.Save(customer);
+		customerManager.Save(customer1);
 	
 	}
 
