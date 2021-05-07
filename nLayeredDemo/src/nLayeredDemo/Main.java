@@ -18,7 +18,9 @@ public class Main {
 		ProductService productService=new ProductManager(new AbcProductDao(), new JLoggerManagerAdapter());
 		
 		Product product=new Product(1,2,"Elma",12,50);
+		Product product1=new Product(2,2,"Çilek",12,45);
 		productService.add(product);
+		productService.add(product1);
 		
 	}
 
