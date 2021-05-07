@@ -2,6 +2,10 @@ package JavaCampHomework2;
 
 public class Course {
 
+	int id;
+	String courseName;
+	String teacherName;
+	
 	public Course() {
 		
 	};
@@ -11,7 +15,5 @@ public class Course {
 		this.teacherName=teacherName;
 	};
 
-	int id;
-	String courseName;
-	String teacherName;
+	
 }
