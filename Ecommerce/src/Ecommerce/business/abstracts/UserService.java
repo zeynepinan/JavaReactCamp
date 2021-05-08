@@ -8,7 +8,7 @@ public interface UserService {
 
 
 	void logIn(User user, String email, String password);
-	void add( User user);
+	void register( User user);
 	void delete(User user);
 	void update(User user);
 	User get(String email);

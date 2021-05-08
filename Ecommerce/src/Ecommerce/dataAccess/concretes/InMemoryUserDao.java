@@ -12,7 +12,7 @@ public class InMemoryUserDao implements UserDao{
 	private List<User> users = new ArrayList<User>();
 	
 	@Override
-	public void add(User user) {
+	public void register(User user) {
 		System.out.println("Kullanýcý sisteme eklendi : "+ user.getEmail());
 		users.add(user);
 	}

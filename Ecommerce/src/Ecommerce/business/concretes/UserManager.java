@@ -2,16 +2,20 @@ package Ecommerce.business.concretes;
 
 import java.util.List;
 
+import Ecommerce.business.abstracts.ActivationService;
 import Ecommerce.business.abstracts.UserService;
+import Ecommerce.business.abstracts.ValidationService;
 import Ecommerce.dataAccess.abstracts.UserDao;
 import Ecommerce.entities.concretes.User;
 
 public class UserManager implements UserService{
 
-	private UserDao userDao;
-	public UserManager(UserDao userDao) {
+	ValidationService validationService;
+	ActivationService activationService;
+	public UserManager(ValidationService validationService, ActivationService activationService) {
 		super();
-		this.userDao = userDao;
+		this.validationService = validationService;
+		this.activationService = activationService;
 	}
 	@Override
 	public void logIn(User user, String email, String password) {
@@ -22,10 +26,20 @@ public class UserManager implements UserService{
 		}
 		
 	}
+	
 
 	@Override
-	public void add(User user) {
-		this.userDao.add(user);
+	public void register(User user) {
+		if (validationService.validate(user)) {
+			activationService.active(user);
+			if (activationService.activeEmail(user)) {
+				System.out.println("Kullanýcý baþarýlý bir þekilde kaydedilmiþtir" + user.getFirstName() + " "
+						+ user.getLastName());
+			} else {
+				System.out.println("Aktivasyon linki için mailinizi kontrol ediniz.");
+			}
+		}
+		
 	}
 
 	@Override
