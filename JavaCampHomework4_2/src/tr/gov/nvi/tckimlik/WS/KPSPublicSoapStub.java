@@ -20,7 +20,6 @@ public class KPSPublicSoapStub extends org.apache.axis.client.Stub implements tr
         _operations = new org.apache.axis.description.OperationDesc[1];
         _initOperationDesc1();
     }
-
     private static void _initOperationDesc1(){
         org.apache.axis.description.OperationDesc oper;
         org.apache.axis.description.ParameterDesc param;
